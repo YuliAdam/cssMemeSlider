@@ -224,3 +224,58 @@ ul li a {
     background-color:none;
     border-radius: 50%;
 }
+@media screen and (max-width: 678px) {
+    .description-nav-container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content:space-around;
+        align-items: center;
+        height: 25%;
+        width: 96vw;
+    }
+    .description-container{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+    }
+    .description-container div{
+        width: 96vw;
+    }
+    .description{
+        text-align: left;
+        font-size: 4.5vw;
+        transition: all 0.5s;
+        color: rgb(254, 201, 248);
+        font-style: oblique;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 2vw;
+        margin-right: 2vw;
+        width: 96vw;
+    }
+    .nav-container{
+        display: flex;
+        justify-content:center;
+        align-items: center;
+        padding: 0;
+        width: 96vw;
+        margin: 0;
+    }
+    #img1:target ~ .gallery-container .description{
+        transform: translateX(0);
+    }
+    #img2:target ~ .gallery-container .description{
+        transform: translateX(-100%);
+    }
+    
+    #img3:target ~ .gallery-container .description{
+        transform: translateX(-200%);
+    }
+    
+    #img4:target ~ .gallery-container .description{
+        transform: translateX(-300%);
+    }
+    
+  }
